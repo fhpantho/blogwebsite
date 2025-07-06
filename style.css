@@ -5,14 +5,14 @@
 }
 
 header {
-  height: 100px;
+  height: 6.25rem; /* 100px / 16px */
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 1.875rem; /* 30px / 16px */
+  padding-right: 1.875rem; /* 30px / 16px */
   position: fixed;
   background-color: rgb(255, 255, 255);
   z-index: 999;
@@ -20,13 +20,13 @@ header {
 .image {
   display: flex;
   justify-content: space-between;
-  column-gap: 20px;
+  column-gap: 1.25rem; /* 20px / 16px */
   transition: color 0.3s ease;
 }
 
 .image img {
-  width: 50px;
-  box-shadow: 2px 2px 2px 2px rgba(31, 29, 29, 0.353);
+  width: 3.125rem; /* 50px / 16px */
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(31, 29, 29, 0.353); /* 2px / 16px */
   border-radius: 50%;
   transition: all 0.3s;
 }
@@ -37,7 +37,7 @@ header {
   text-transform: uppercase;
 }
 .text h1 {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px / 16px */
 }
 
 .image:hover {
@@ -47,20 +47,20 @@ header {
 
 .hed {
   display: flex;
-  column-gap: 50px;
+  column-gap: 3.125rem; /* 50px / 16px */
   text-decoration: none;
   text-align: center;
   align-items: center;
-  padding-right: 50px;
+  padding-right: 3.125rem; /* 50px / 16px */
 }
 
 .hed li {
   list-style: none;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px / 16px */
   transition: all 0.3s ease;
   font-weight: bolder;
-  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem; /* 5px / 16px, 10px / 16px */
   background-color:transparent;
 }
 
@@ -70,41 +70,41 @@ header {
 }
 
 .chatwithme img {
-  width: 30px;
+  width: 1.875rem; /* 30px / 16px */
 }
 .chaticon img {
-  width: 20px;
+  width: 1.25rem; /* 20px / 16px */
 }
 
 .chat {
   display: flex;
   position: fixed;
-  width: 400px;
+  width: 25rem; /* 400px / 16px */
   align-items: center;
   justify-content: center;
-  padding: 0px, 20px, 0px, 20px;
+  padding: 0rem 1.25rem 0rem 1.25rem; /* 0px, 20px, 0px, 20px / 16px */
   top: 80%;
   left: 70%;
-  column-gap: 20px;
+  column-gap: 1.25rem; /* 20px / 16px */
   z-index: 359257309275;
 }
 .chatwithme {
   display: flex;
-  padding: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.08);
-  border-radius: 20px;
+  padding: 0.625rem; /* 10px / 16px */
+  box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.1), 0 0.375rem 0.625rem rgba(0, 0, 0, 0.08); /* 10px, 25px, 6px, 10px / 16px */
+  border-radius: 1.25rem; /* 20px / 16px */
   font-weight: lighter;
-  column-gap: 5px;
+  column-gap: 0.3125rem; /* 5px / 16px */
   cursor: pointer;
   background-color: #fff;
 }
 
 .chaticon {
-  padding: 15px 20px;
+  padding: 0.9375rem 1.25rem; /* 15px, 20px / 16px */
   background-color: #7947e9;
-  border-radius: 40px;
-  box-shadow: 0 8px 20px rgba(121, 71, 233, 0.3),
-    0 4px 10px rgba(121, 71, 233, 0.2);
+  border-radius: 2.5rem; /* 40px / 16px */
+  box-shadow: 0 0.5rem 1.25rem rgba(121, 71, 233, 0.3),
+    0 0.25rem 0.625rem rgba(121, 71, 233, 0.2); /* 8px, 20px, 4px, 10px / 16px */
 
   transition: all 0.3s ease;
 }
@@ -113,14 +113,14 @@ header {
   cursor: pointer;
 }
 .mediaicon li img {
-  width: 30px;
+  width: 1.875rem; /* 30px / 16px */
 }
 
 .socialmedia {
   position: fixed;
   top: 35%;
   left: 0%;
-  padding: 10px 10px;
+  padding: 0.625rem 0.625rem; /* 10px / 16px */
   background-color: rgb(255, 255, 255);
   z-index: 43;
 }
@@ -128,12 +128,12 @@ header {
   display: flex;
   flex-direction: column;
   list-style: none;
-  row-gap: 15;
+  row-gap: 0.9375rem; /* 15px / 16px (original value 15, assuming 15px)*/
 }
 
 .mediaicon li {
-  padding: 10px;
-  border-radius: 5px;
+  padding: 0.625rem; /* 10px / 16px */
+  border-radius: 0.3125rem; /* 5px / 16px */
   transition: all 0.3s ease;
   text-align: center;
   align-items: center;
@@ -145,7 +145,7 @@ header {
 }
 .introduce {
     position: relative;
-    padding: 220px 40px 50px 40px;
+    padding: 13.75rem 2.5rem 3.125rem 2.5rem; /* 220px, 40px, 50px, 40px / 16px */
     margin: auto;
     text-align: center;
     align-items: center;
@@ -173,65 +173,65 @@ header {
     font-size: 4rem;
     text-transform: uppercase;
     color: #101011;
-    padding: 20px;
+    padding: 1.25rem; /* 20px / 16px */
 }
 
 .introduce p {
     font-size: 1.7rem;
-    margin: 10px;
-    padding: 10px;
+    margin: 0.625rem; /* 10px / 16px */
+    padding: 0.625rem; /* 10px / 16px */
     color: black;
 }
 
 .btn {
-    padding: 20px 60px;
+    padding: 1.25rem 3.75rem; /* 20px, 60px / 16px */
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px / 16px */
     background-color: #7a47e9;
     color: #fff;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px / 16px */
     font-weight: 100;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0),
-    0 4px 10px rgba(255, 255, 255, 0);
+    box-shadow: 0 0.5rem 1.25rem rgba(255, 255, 255, 0),
+    0 0.25rem 0.625rem rgba(255, 255, 255, 0); /* 8px, 20px, 4px, 10px / 16px */
 
 }
 .btn:hover {
 
     background-color: #fff;
     color: #7947e9;
-    border: 1px solid #7947e9;
-    box-shadow: 0 8px 20px rgba(121, 71, 233, 0.3),
-    0 4px 10px rgba(121, 71, 233, 0.2);
+    border: 0.0625rem solid #7947e9; /* 1px / 16px */
+    box-shadow: 0 0.5rem 1.25rem rgba(121, 71, 233, 0.3),
+    0 0.25rem 0.625rem rgba(121, 71, 233, 0.2); /* 8px, 20px, 4px, 10px / 16px */
 }
 
 
 .mouse {
-      width: 30px;
-      height: 55px;
-      border: 2px solid #333;
-      border-radius: 20px;
+      width: 1.875rem; /* 30px / 16px */
+      height: 3.4375rem; /* 55px / 16px */
+      border: 0.125rem solid #333; /* 2px / 16px */
+      border-radius: 1.25rem; /* 20px / 16px */
       position: relative;
     }
 
     .dot {
-      width: 6px;
-      height: 6px;
+      width: 0.375rem; /* 6px / 16px */
+      height: 0.375rem; /* 6px / 16px */
       background: #333;
       border-radius: 50%;
       position: absolute;
-      top: 10px;
+      top: 0.625rem; /* 10px / 16px */
       left: 50%;
       transform: translateX(-50%);
       animation: bounce 2s infinite ease-in-out;
     }
 
     @keyframes bounce {
-      0%   { top: 10px; opacity: 1; }
-      50%  { top: 30px; opacity: 0.5; }
-      100% { top: 10px; opacity: 1; }
+      0%   { top: 0.625rem; opacity: 1; } /* 10px / 16px */
+      50%  { top: 1.875rem; opacity: 0.5; } /* 30px / 16px */
+      100% { top: 0.625rem; opacity: 1; } /* 10px / 16px */
     }
 
 
@@ -241,7 +241,7 @@ header {
   align-items: center;
   justify-content: center;
   display: flex;
-  margin-top: 200px;
+  margin-top: 12.5rem; /* 200px / 16px */
 }
 
 .about 
@@ -256,26 +256,26 @@ header {
   margin: auto;
   text-align: center;
   flex-direction: column;
-  padding-top: 100px;
-  width: 800px;
+  padding-top: 6.25rem; /* 100px / 16px */
+  width: 50rem; /* 800px / 16px */
 }
 
 .abouttext h1 {
-  font-size: 40px;
+  font-size: 2.5rem; /* 40px / 16px */
   color: #080808;
   font-family: 'Playfair Display', serif;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* 20px / 16px */
 }
 .line {
-  padding: 3px 30px 3px 30px;
+  padding: 0.1875rem 1.875rem 0.1875rem 1.875rem; /* 3px, 30px / 16px */
   background-color: #7947e9;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  border-radius: 0.625rem; /* 10px / 16px */
+  margin-bottom: 0.625rem; /* 10px / 16px */
 }
 .abouttext p {
-  font-size: 20px;
-  padding-bottom: 100px;
+  font-size: 1.25rem; /* 20px / 16px */
+  padding-bottom: 6.25rem; /* 100px / 16px */
 }
 
 .textexplain {
@@ -283,59 +283,59 @@ header {
   justify-content: space-between;
   width: 80%;
   margin: auto;
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem; /* 50px / 16px */
 }
 .textexpaintext {
   width: 48%;
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem; /* 30px / 16px */
 }
 .textexpaintext h2 {
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px / 16px */
   text-transform: capitalize;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* 20px / 16px */
 }
 
 .textexpaintext p {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px / 16px */
   text-align: justify;
   text-justify: inter-word;
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem; /* 30px / 16px */
 }
 
 .skill {
   width: 48%;
 }
 .skill h2 {
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px / 16px */
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* 20px / 16px */
 }
 .skill ul {
   display: flex;
-  column-gap: 30px;
-  margin-bottom: 30px;
+  column-gap: 1.875rem; /* 30px / 16px */
+  margin-bottom: 1.875rem; /* 30px / 16px */
 }
 
 .skill ul li{
   list-style: none;
-  font-size: 15px;
+  font-size: 0.9375rem; /* 15px / 16px */
   text-transform: uppercase;
-  padding: 10px 20px ;
+  padding: 0.625rem 1.25rem ; /* 10px, 20px / 16px */
   background-color: rgba(255, 255, 255, 0.371);
   align-items:center;
   text-align: center;
   justify-content: center;
   display: flex;
   color: #333;
-  border-radius: 5px;
+  border-radius: 0.3125rem; /* 5px / 16px */
   border: none;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.1), 0 0.375rem 0.625rem rgba(0, 0, 0, 0.08); /* 10px, 25px, 6px, 10px / 16px */
 }
 
 .projects {
   background-color: #ffffff;
   display: flex;
-  padding-top: 50px;
+  padding-top: 3.125rem; /* 50px / 16px */
   flex-direction: column;
 }
 .projecttext
@@ -347,27 +347,27 @@ header {
 }
 
 .projecttext h1 {
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px / 16px */
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem; /* 20px / 16px */
 }
 
 .projecttext p {
 
-  font-size: 20px;
-  padding-bottom: 20px;
-  padding-top: 10px;
+  font-size: 1.25rem; /* 20px / 16px */
+  padding-bottom: 1.25rem; /* 20px / 16px */
+  padding-top: 0.625rem; /* 10px / 16px */
   width: 50%;
 }
 
 .projectitem {
-  padding-top: 50px;
+  padding-top: 3.125rem; /* 50px / 16px */
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: auto;
-  column-gap: 30px;
-  margin-bottom: 100px;
+  column-gap: 1.875rem; /* 30px / 16px */
+  margin-bottom: 6.25rem; /* 100px / 16px */
 }
 .projectimg
 {
@@ -375,22 +375,22 @@ header {
 
 .projectimg img 
 {
-  width: 700px;
+  width: 43.75rem; /* 700px / 16px */
 }
 
 .projectimagetext h1
 {
 
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px / 16px */
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem; /* 20px / 16px */
 
 
 }
 .projectimagetext p {
-  font-size: 20px;
-  padding-bottom: 30px;
-  padding-top: 10px;
+  font-size: 1.25rem; /* 20px / 16px */
+  padding-bottom: 1.875rem; /* 30px / 16px */
+  padding-top: 0.625rem; /* 10px / 16px */
   text-align: justify;
   color: #232323;
 
@@ -400,7 +400,7 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 50px 40px 50px 40px;
+    padding: 3.125rem 2.5rem 3.125rem 2.5rem; /* 50px, 40px / 16px */
     margin: auto;
     text-align: center;
     align-items: center;
@@ -424,44 +424,44 @@ header {
 }
 
 .contuct h1 {
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px / 16px */
   text-transform: uppercase;
   color: #333;
   font-weight: bolder;
-  padding: 20px 0px;
+  padding: 1.25rem 0rem; /* 20px / 16px */
 }
 
 .contuct form {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 1.875rem; /* 30px / 16px */
   width: 40%;
   background-color: #fff;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.08);
-   border-radius: 10px;
+  padding: 1.25rem; /* 20px / 16px */
+   box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.1), 0 0.375rem 0.625rem rgba(0, 0, 0, 0.08); /* 10px, 25px, 6px, 10px / 16px */
+   border-radius: 0.625rem; /* 10px / 16px */
    border: none;
-   margin-bottom: 50px;
+   margin-bottom: 3.125rem; /* 50px / 16px */
 }
 
 .input1 {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* 10px, 20px / 16px */
   width: 80%;
-  height: 30px;
+  height: 1.875rem; /* 30px / 16px */
   background-color: #ebebeb;
   color: #333;
-  border-radius: 5px;
+  border-radius: 0.3125rem; /* 5px / 16px */
 }
 
 .spacialinput {
    width: 87%;
-  height: 200px;
-  padding: 10px 20px;
-  font-size: 16px;
+  height: 12.5rem; /* 200px / 16px */
+  padding: 0.625rem 1.25rem; /* 10px, 20px / 16px */
+  font-size: 1rem; /* 16px / 16px */
   border: none;
-  border-radius: 6px;
+  border-radius: 0.375rem; /* 6px / 16px */
   background-color: #eee;
   resize: none;
   box-sizing: border-box;
@@ -482,36 +482,36 @@ footer {
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  column-gap: 300px;
-  padding-bottom: 60px;
+  column-gap: 18.75rem; /* 300px / 16px */
+  padding-bottom: 3.75rem; /* 60px / 16px */
 }
 
 .outro {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-  row-gap: 20px;
+  margin-top: 2.5rem; /* 40px / 16px */
+  row-gap: 1.25rem; /* 20px / 16px */
 }
 .outro h2 {
 
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px / 16px */
   text-transform: uppercase;
 }
 
 .outro p {
 
-  font-size:20px ;
+  font-size:1.25rem ; /* 20px / 16px */
 }
 
 .socialemedeia {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  margin-left: 6.25rem; /* 100px / 16px */
 }
 
 .socialemedeia h2 {
-  margin-top: 40px;
-  font-size: 30px;
+  margin-top: 2.5rem; /* 40px / 16px */
+  font-size: 1.875rem; /* 30px / 16px */
   text-transform: uppercase;
 
 }
@@ -519,15 +519,15 @@ footer {
 .socialemedeia ul {
   list-style: none;
   display: flex;
-  column-gap: 20px;
-  margin-top: 20px;
+  column-gap: 1.25rem; /* 20px / 16px */
+  margin-top: 1.25rem; /* 20px / 16px */
 }
 .socialemedeia ul li {
   text-align: center;
   align-items: center;
 }
 .socialemedeia ul li img {
-  width: 30px;
+  width: 1.875rem; /* 30px / 16px */
 }
 
 .socialemedeia ul li:hover {
@@ -536,16 +536,16 @@ footer {
 
 .footerline {
   width: 90%;
-  height: 1px;
+  height: 0.0625rem; /* 1px / 16px */
   margin: auto;
   background-color: rgb(156, 156, 156);
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* 20px / 16px */
 }
 
 .secondsection
 {
   text-align: center;
   margin: auto;
-  font-size: 12px;
-  padding: 60px 10px;
+  font-size: 0.75rem; /* 12px / 16px */
+  padding: 3.75rem 0.625rem; /* 60px, 10px / 16px */
 }
