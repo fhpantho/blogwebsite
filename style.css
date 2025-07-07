@@ -118,7 +118,7 @@ header {
 
 .socialmedia {
   position: fixed;
-  top: 35%;
+  top: 25%;
   left: 0%;
   padding: 0.625rem 0.625rem; /* 10px / 16px */
   background-color: rgb(255, 255, 255);
@@ -472,8 +472,9 @@ header {
 footer {
   background-color: black;
   color: white;
-  z-index: -1;
+  z-index: 6346436346;
   position: relative;
+  padding-top : 2.5rem;
 }
 
 .Firstsection {
@@ -548,4 +549,293 @@ footer {
   margin: auto;
   font-size: 0.75rem; /* 12px / 16px */
   padding: 3.75rem 0.625rem; /* 60px, 10px / 16px */
+}
+
+/* Base styles (for all screen sizes, typically desktop-first) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Media Queries for Mobile Devices --- */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 2rem; 
+  }
+
+  p {
+    font-size: 1rem; 
+  }
+
+  .hed {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .hed li {
+    padding: 0.5rem 0;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto; /* Allow height to adjust */
+    padding: 1rem;
+    position: relative;
+  }
+
+  .image {
+    margin-bottom: 0.5rem; /* Space between logo and nav on mobile */
+  }
+
+  /* Example: Adjust the chat bubble position for mobile */
+  .chat {
+    width: 90%; /* Make it wider on small screens */
+    left: 5%; /* Center it horizontally */
+    top: auto; /* Remove fixed top position */
+    bottom: 1rem; /* Position at the bottom */
+    justify-content: center; /* Center content within the chat bubble */
+  }
+
+  .chatwithme {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .chaticon {
+    padding: 0.8rem 1rem;
+  }
+
+  /* Example: Make social media icons full width and centered */
+  .socialmedia {
+    position: static; /* Remove fixed positioning */
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .mediaicon {
+    flex-direction: row; /* Display icons horizontally */
+    justify-content: center; /* Center the icons */
+    column-gap: 1rem;
+    row-gap: 0; /* Reset row-gap */
+  }
+
+  /* Example: Adjust padding and font size for the introduction section */
+  .introduce {
+    padding: 10rem 1rem 2rem 1rem; /* Adjust padding for mobile */
+  }
+
+  .introduce h1 {
+    font-size: 2.5rem; /* Smaller heading */
+  }
+
+  .introduce p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem; /* Smaller button padding */
+    font-size: 1rem;
+  }
+
+  /* Example: Adjust "About" section layout */
+  .abouttext {
+    width: 90%; /* Make it wider on mobile */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .abouttext h1 {
+    font-size: 2rem;
+  }
+
+  .abouttext p {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .textexplain {
+    flex-direction: column; /* Stack text and skills vertically */
+    width: 90%;
+  }
+
+  .textexpaintext,
+  .skill {
+    width: 100%; /* Full width for stacked items */
+    margin-bottom: 2rem; /* Add space between sections */
+  }
+
+  .textexpaintext h2,
+  .skill h2 {
+    font-size: 1.5rem;
+  }
+
+  .skill ul {
+    flex-wrap: wrap; /* Allow skills to wrap to next line */
+    justify-content: center; /* Center skills if they wrap */
+    column-gap: 0.8rem;
+    row-gap: 0.8rem;
+  }
+
+  .skill ul li {
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
+
+  /* Example: Adjust project section layout for mobile */
+  .projecttext p {
+    width: 90%; /* Make paragraph wider */
+  }
+
+  .projectitem {
+    flex-direction: column; /* Stack project image and text vertically */
+    width: 90%;
+    column-gap: 0; /* Remove column gap */
+    margin-bottom: 3rem;
+  }
+
+  .projectimg img {
+    width: 100%; /* Make image full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .projectimagetext {
+    padding-top: 1.5rem; /* Add space between image and text */
+  }
+
+  .projectimagetext h1 {
+    font-size: 1.5rem;
+  }
+
+  .projectimagetext p {
+    font-size: 1rem;
+  }
+
+  /* Example: Adjust contact form for mobile */
+  .contuct form {
+    width: 90%; /* Make form wider */
+    padding: 1rem;
+  }
+
+  .contuct h1 {
+    font-size: 2rem;
+  }
+
+  .input1,
+  .spacialinput {
+    width: 90%; /* Make input fields wider */
+  }
+
+  /* Example: Adjust footer layout */
+  .Firstsection {
+    flex-direction: column; /* Stack footer sections vertically */
+    column-gap: 0;
+    row-gap: 2rem; /* Add space between stacked sections */
+    width: 90%;
+    padding-bottom: 2rem;
+  }
+
+  .outro {
+    margin-top: 0; /* Remove top margin if stacked */
+  }
+
+  .socialemedeia {
+    margin-left: 0; /* Remove left margin */
+    text-align: center;
+  }
+
+  .socialemedeia ul {
+    justify-content: center; /* Center social media icons */
+  }
+
+  .secondsection {
+    padding: 2rem 0.625rem; /* Adjust padding */
+  }
+}
+
+/* Medium devices (tablets, 601px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  /* Styles specific to screens between 601px and 768px */
+
+  /* Example: Minor font size adjustments */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  /* Adjustments for header and navigation */
+  .hed {
+    column-gap: 2rem;
+    padding-right: 2rem;
+  }
+
+  header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* Adjustments for chat bubble */
+  .chat {
+    left: 60%;
+    width: 30rem;
+  }
+
+  /* Adjustments for introduction section */
+  .introduce h1 {
+    font-size: 3rem;
+  }
+
+  .introduce p {
+    font-size: 1.5rem;
+  }
+
+  /* Adjustments for "About" section */
+  .abouttext {
+    width: 90%;
+  }
+
+  .textexplain {
+    width: 90%;
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+  }
+
+  .textexpaintext,
+  .skill {
+    width: 48%; /* Maintain two-column layout if possible */
+  }
+
+  /* Adjustments for projects */
+  .projectitem {
+    width: 90%;
+    flex-direction: column; /* Stack items on tablets too */
+  }
+
+  .projectimg img {
+    width: 100%;
+  }
+
+  /* Adjustments for contact form */
+  .contuct form {
+    width: 60%;
+  }
+
+  /* Adjustments for footer */
+  .Firstsection {
+    column-gap: 10rem;
+    width: 90%;
+  }
+}
+
+/* Large devices (laptops/desktops, 769px and up) */
+@media only screen and (min-width: 769px) {
+  /* Styles that apply to larger screens. Your original CSS is essentially your desktop styles,
+     so you typically don't need much here unless you're explicitly overriding previous media queries. */
 }
